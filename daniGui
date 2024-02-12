@@ -1,3 +1,23 @@
+local player = game.Players.LocalPlayer
+repeat wait() until game.Loaded and game:GetService'Players'.LocalPlayer
+local Version = '1.82'
+local plrs = game:GetService'Players'
+local plr = plrs.LocalPlayer
+local vec0 = Vector3.new()
+local prop1000 = PhysicalProperties.new(1000,1000,0,1000,0)
+local cf0 = CFrame.new()
+
+local rs = game:GetService'RunService'
+local pinga
+local points
+local vim = game:GetService'VirtualInputManager'
+local LoopFlingV1 = {}
+local LoopFlingV2 = {}
+local ts = game:GetService'TweenService'
+
+local function onChat(message)
+    if message == "Dani Gui" then
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local window = OrionLib:MakeWindow({Name = "Dani Gui", IntroText = "Loading.. Dani Gui", IntroIcon = "rbxassetid://4483345998", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
